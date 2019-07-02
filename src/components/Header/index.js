@@ -8,7 +8,7 @@ class Header extends Component {
         <ul>
           <li>首页</li>
           <li>个人中心</li>
-          <li>退出</li>
+          <li>退出a</li>
         </ul>
       </header>
     )
