@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Fastclick from 'fastclick'
+Fastclick.attach(document.body)
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

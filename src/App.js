@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
+import Routes from './routes'
 import Layout from './layout'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <Layout>123</Layout>
-    </div>
+    <Layout>
+      <Routes></Routes>
+    </Layout>
   );
 }
 
