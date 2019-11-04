@@ -5,13 +5,15 @@ body {
 .main-wapper {
   height: calc(100vh - 95px);
   position: relative;
+  overflow: hidden;
 }
 .main-wapper > div {
+  position: absolute;
   height: 100%;
   width: 100%;
-  position: absolute;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 .App-link {
   color: #61dafb;

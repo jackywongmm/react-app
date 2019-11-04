@@ -13,26 +13,16 @@ function Routes () {
           key={location.pathname}
           classNames="fade"
           timeout={300}>
-          <React.Fragment>
+          <Switch location={location}>
             <Route exact path="/" component={Home} />
             <Route path="/Setting" component={Setting} />
             <Route path="/LogOut" component={LogOut} />
-          </React.Fragment>
+          </Switch>
         </CSSTransition>
       </TransitionGroup>
     )}
     />
   )
 }
-
-const styles = {};
-
-styles.fill = {
-  position: "absolute",
-  left: 0,
-  right: 0,
-  top: 0,
-  bottom: 0
-};
 
 export default Routes

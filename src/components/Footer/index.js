@@ -43,7 +43,6 @@ class Footer extends Component {
           }}
           />
           }
-          badge={1}
           data-seed="logId"
           onPress={() => this.handleOnPress('./', 'Life')}
         >
@@ -68,7 +67,6 @@ class Footer extends Component {
           }
           title="Koubei"
           key="Koubei"
-          badge={'new'}
           data-seed="logId1"
           onPress={() => this.handleOnPress('./Setting', 'Koubei')}
         >
@@ -82,6 +80,7 @@ class Footer extends Component {
             }}
             />
           }
+          selected={this.state.currentItem === 'Friends'}
           selectedIcon={
             <div style={{
               width: '22px',
@@ -92,14 +91,7 @@ class Footer extends Component {
           }
           title="Friend"
           key="Friend"
-          dot
-        >
-        </TabBar.Item>
-        <TabBar.Item
-          icon={{ uri: 'https://zos.alipayobjects.com/rmsportal/asJMfBrNqpMMlVpeInPQ.svg' }}
-          selectedIcon={{ uri: 'https://zos.alipayobjects.com/rmsportal/gjpzzcrPMkhfEqgbYvmN.svg' }}
-          title="My"
-          key="my"
+          onPress={() => this.handleOnPress('./LogOut', 'Friends')}
         >
         </TabBar.Item>
       </TabBar>

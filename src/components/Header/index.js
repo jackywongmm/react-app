@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import { Link } from "react-router-dom"
-// import './index.scss'
+import styles from './index.module.css'
 import { NavBar, Icon } from 'antd-mobile';
 
 class Header extends Component {
-  constructor(props){
-    super(props)
-  }
+  // constructor(props) {
+  //   super(props)
+  // }
   render () {
     return (
       <NavBar
@@ -16,7 +15,9 @@ class Header extends Component {
         rightContent={[
           <Icon key="1" type="ellipsis" />,
         ]}
-      >NavBar</NavBar>
+      >
+        <span className={styles.title}>标题</span>
+      </NavBar>
     )
   }
 }

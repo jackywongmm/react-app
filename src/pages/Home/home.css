@@ -1,0 +1,33 @@
+.btn{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #2d8cf0;
+  overflow: hidden;
+}
+.btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: var(--x,0); 
+  top: var(--y,0);
+  pointer-events: none;
+  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: translate(-50%,-50%) scale(10);
+  opacity: 0;
+  transition: transform .3s, opacity .8s;
+}
+.btn:not([disabled]):active::after {
+  transform: translate(-50%,-50%) scale(0);
+  opacity: .3;
+  transition: 0s;
+}

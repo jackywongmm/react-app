@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import './home.css'
+
 
 class Home extends Component {
   render () {
     return (
-      <div className="home" onClick={()=>{this.props.history.push('/Setting')}} style={{background:'red'}}>
-        home
+      <div  style={{ background: 'red' }}>
+        <span className="btn">Button</span>
       </div>
     )
   }
